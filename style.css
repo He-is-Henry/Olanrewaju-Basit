@@ -148,11 +148,12 @@ tr:nth-child(even) {
 }
 
 /* Buttons */
-button-container {
+.button-container {
   display: flex;
   flex-direction: row;
   gap: 15px;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .button, .button1 {
