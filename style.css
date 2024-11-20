@@ -148,12 +148,16 @@ tr:nth-child(even) {
 }
 
 /* Buttons */
+button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
 .button, .button1 {
 
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-
-  padding: 10px 20px;
 
   border: none;
 
@@ -424,10 +428,4 @@ a {
     transition: transform 0.3s ease;
 
 }
-
-.code:hover::after {
-
-    transform: scaleX(1);
-
-    transform-origin: bottom left;
 
