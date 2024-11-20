@@ -170,6 +170,7 @@ button-container {
   align-items: center;
 
   margin: 20px;
+  padding: 20px 10px;
 
   transition: background-color 0.3s ease;
 
