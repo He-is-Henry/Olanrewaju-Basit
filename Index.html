@@ -1,219 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <style>
-    /* CSS Variables for Theming */
-    :root {
-      --primary-color: #3498db;
-      --secondary-color: #2ecc71;
-      --bg-color: #f4f4f4;
-      --text-color: #333;
-    }
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    h1, h2, h3 {
-      color: var(--primary-color);
-      text-align: center;
-      text-transform: uppercase;
-    }
-    .emoji {
-      color: red;
-    }
-    /* Container for the layout */
-    .container {
-      display: grid;  
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 20px;
-      padding: 20px;
-      max-width: 100vw;
-      margin: 0 auto;
-      overflow-x: hidden;
-    }
-    /* Card styling */
-    .card {
-      background-color: white;
-      padding: 40px;
-      margin: 0px auto;
-      border-radius: 8px;
-      transition: transform 0.3s;
-      line-height: 1.5;
-      overflow: hidden;
-      box-sizing: border-box;
-      max-width: 95%;
-      transform-origin: center;
-    }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      background-color: #f0f8ff;
-      border: 2px solid var(--primary-color);
-      max-width: 100%;
-    }
-    /* Responsive Table */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    @media (max-width: 600px) {
-      table, tbody, td, th, tr {
-        display: block;
-        width: 100%;
-      }
-      th, td {
-        padding: 10px;
-      }
-      td {
-        text-align: center;
-        border: 1px solid #ddd;
-      }
-    }
-    /* Buttons */
-    .button, .button1 {
-      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-      padding: 10px 20px;
-      border: none;
-      border-radius: 25px;
-      color: white;
-      cursor: pointer;
-      align-items: center;
-      margin: 20px;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover {
-      transform: scale(1.2);
-      border-radius: 25px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      background-color: #2ecc71;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    /* Flexbox */
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .flex-item {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 10px;
-      transition: transform 0.3s;
-    }
-    .flex-item:hover {
-      transform: translateY(-5px);
-    }
-    footer {
-      text-align: center;
-    }
-    a {
-      color: var(--primary-color);
-      text-decoration: underline;
-      font-weight: bold;
-      position: relative;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
-    }
-    .code:hover {
-      color: var(--secondary-color);
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About me</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+  <body>
 <header>
+
   <h1>About me</h1>
+
 </header>
 
 <!-- Main Content Section -->
+
 <section class="container">
+
   <div class="card">
-    <h2>Who I Am</h2>
-    <p>I'm a web developer with a passion for building user-friendly, responsive websites. I enjoy solving problems and bringing creative ideas to life through code. Currently, I'm enhancing my skills in front-end development, focusing on modern web technologies like HTML, CSS, and JavaScript, and continuously learning more to stay on top of the latest trends.</p>
+
+    <h2>Who i am</h2>
+
+    <p>I&apos;m a web developer with a passion for building user-friendly, responsive websites. I enjoy solving problems and bringing creative ideas to life through code. Currently, I&apos;m enhancing my skills in front-end development, focusing on modern web technologies like HTML, CSS, and JavaScript, and continuously learning more to stay on top of the latest trends</p>
+
   </div>
+
   <div class="card">
-    <h2>Projects and Achievements</h2>
-    <p>I have worked on several projects that showcase my skills in web development. Notable projects include the <a class="code" href="https://codepen.io/fxdrcatp-the-typescripter/pen/eYwbZmo" target="_blank">blog post</a> and a <a class="code" href="https://codepen.io/fxdrcatp-the-typescripter/pen/oNrRRZQ" target="_blank">CSS menu</a>. Each project has helped me refine my skills in areas like responsive design, front-end frameworks, and user experience. I'm proud of the work I've done and am always looking for new challenges to tackle.</p>
+
+    <h2>Projects and achievements</h2>
+
+    <p>I have worked on several projects that showcase my skills in web development. Notable projects include the <a class="code" href="https://codepen.io/fxdrcatp-the-typescripter/pen/eYwbZmo" target="_blank">blog post</a> and a <a class="code" href="https://codepen.io/fxdrcatp-the-typescripter/pen/oNrRRZQ" target="_blank">CSS menu</a>. Each project has helped me refine my skills in areas like responsive design, front-end frameworks, and user experience. I’m proud of the work I’ve done and am always looking for new challenges to tackle.</p>
+
   </div>
+
   <div class="card">
+
     <h2>Education</h2>
+
     <p>I am currently a 100-level student at Lagos State University (LASU), studying Project Management. My coursework has provided me with a strong foundation in project planning, organization, and execution. I am applying these skills to my web development projects, where I integrate effective project management practices to ensure successful outcomes. I look forward to leveraging my academic knowledge and practical experience to excel in both my studies and future career.</p>
+
   </div>
+
 </section>
 
 <!-- Flexbox Content Section -->
+
 <section class="flex-container">
+
   <div class="flex-item">
-    <h3>My Passion for Learning</h3>
-    <p>I'm constantly exploring new technologies and expanding my knowledge base. Whether it's mastering a new coding language or diving into the latest design trends, I believe that staying curious and adaptable is key to growth in the fast-paced tech world.</p>
+
+    <h3>My passion for learning</h3>
+
+    <p>I’m constantly exploring new technologies and expanding my knowledge base. Whether it’s mastering a new coding language or diving into the latest design trends, I believe that staying curious and adaptable is key to growth in the fast-paced tech world.</p>
+
   </div>
+
   <div class="flex-item">
-    <h3>My Coding Journey</h3>
-    <p>I've come a long way since I first started coding. What began as a curiosity has evolved into a full-fledged passion. Through consistent practice and solving real-world problems, I've developed a deeper understanding of both the creative and technical aspects of web development. Each step forward motivates me to keep pushing my limits and growing as a developer.</p>
+
+    <h3>My coding journey</h3>
+
+    <p>I’ve come a long way since I first started coding. What began as a curiosity has evolved into a full-fledged passion. Through consistent practice and solving real-world problems, I’ve developed a deeper understanding of both the creative and technical aspects of web development. Each step forward motivates me to keep pushing my limits and growing as a developer.</p>
+
   </div>
+
   <div class="flex-item">
-    <h3>Mentorship and Learning</h3>
-    <p>I've had the privilege of learning from incredible tutors along my journey. Edu Champs, my tutor, has provided me with invaluable guidance and support, helping me sharpen my skills and build confidence in my abilities. Additionally, I've gained a wealth of knowledge from Dave Gray's YouTube tutorials, which have been instrumental in my self-paced learning. I deeply appreciate both sources for their contributions to my growth as a developer.</p>
+
+    <h3>Mentorship and learning</h3>
+
+    <p>I've had the privilege of learning from incredible tutors along my journey. Edu Champs, my tutor, has provided me with invaluable guidance and support, helping me sharpen my skills and build confidence in my abilities. Additionally, I’ve gained a wealth of knowledge from Dave Gray’s YouTube tutorials, which have been instrumental in my self-paced learning. I deeply appreciate both sources for their contributions to my growth as a developer.</p>
+
   </div>
+
 </section>
 
 <!-- Responsive Table Section -->
+
 <section>
+
   <h2>Insights & Details</h2>
+
   <table>
+
     <thead>
+
       <tr>
+
         <th>Category</th>
+
         <th>Detail</th>
+
         <th>Description</th>
+
       </tr>
+
     </thead>
+
     <tbody>
+
       <tr>
+
         <td data-label="Category">Project</td>
+
         <td data-label="Detail">Blog Post</td>
+
         <td data-label="Description">A detailed blog post demonstrating my writing skills.</td>
+
       </tr>
+
       <tr>
+
         <td data-label="Category">Skill</td>
+
         <td data-label="Detail">CSS Menu Design</td>
+
         <td data-label="Description">A creative and responsive CSS menu I designed.</td>
+
       </tr>
+
       <tr>
+
         <td data-label="Category">Achievement</td>
+
         <td data-label="Detail">Top 1 in Coding Contest</td>
+
         <td data-label="Description">Awarded first place in the web development contest leaderboard for two straight weeks.</td>
+
       </tr>
+
       <tr>
+
         <td data-label="Category">Experience</td>
+
         <td data-label="Detail">Web Development</td>
+
         <td data-label="Description">Extensive experience in front-end development and responsive design.</td>
+
       </tr>
+
     </tbody>
+
   </table>
+
 </section>
 
 <!-- Button Section -->
+
 <section>
+
   <h2>Connect with me</h2>
+
   <a href="https://wa.link/8sc5hn" target="_blank">
+
     <button class="button1">Hire Me</button>
-  </
+
+  </a>
+
+  <a href="https://wa.link/u9zodx" target="_blank">
+
+    <button class="button">Reach out</button>
+
+  </a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+  <p>&copy; 2024 - Henry <span class="emoji">❣️</span> | Personal Portfolio</p>
+
+          </footer>
+  </body>
+</html>
+          
