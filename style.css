@@ -152,12 +152,12 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: center;
+  justify-content: center;
 }
 
 .button, .button1 {
-
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
 
   border: none;
